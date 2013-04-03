@@ -48,11 +48,14 @@ public class Player {
 		return num;
 	}
 	
-	private int pointsThreeOfAKind(int[] arr) {
+	private int pointsNumOfAKind(int[] arr, int num) {
 		for(int i = 0; i < arr.length; i++) {
 			int counter = 0;
 			for(int j = 0; j < arr.length; j++) {
-				if (arr[i] == arr[j]) count++;
+				if (arr[i] == arr[j]) counter++;
+			}
+			if (counter >= num) {
+				break;
 			}
 		}
 	}
