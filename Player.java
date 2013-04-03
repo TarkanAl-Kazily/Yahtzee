@@ -5,4 +5,5 @@ public class Player {
 	}
 	
 	private String name;
+	private int[] points = new int[17];
 }
