@@ -7,15 +7,15 @@ public class Player {
 	}
 	
 	public static void initializeScores() {
-		for(int i = 0; i < YahtzeeConstants.N_CATEGORIES; i++) {
-			for(int j = 0; j < YahtzeeConstants.N_DICE; j++) {
-				
+		for(int category = 0; category < YahtzeeConstants.N_CATEGORIES; category++) {
+			for(int diceCombo = 0; diceCombo < YahtzeeConstants.N_DICE; diceCombo++) {
+				for(int  = 0; )
 			}
 		}
 	}
 	
 	public boolean scoreRoll(int[] dice, int category) {
-		if (points[category] != 0) {
+		if ((points[category] != 0)) {
 			points[category] = getPoints(dice, category);
 			return true;
 		}
@@ -30,6 +30,6 @@ public class Player {
 	}
 	
 	private String name;
-	private int[] points = new int[17];
+	private int[] points = new int[YahtzeeConstants.N_CATEGORIES];
 	private static int[][][] scores = new int[YahtzeeConstants.N_CATEGORIES][YahtzeeConstants.N_DICE][1];
 }
