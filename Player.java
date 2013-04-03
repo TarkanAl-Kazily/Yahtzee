@@ -49,7 +49,12 @@ public class Player {
 	}
 	
 	private int pointsThreeOfAKind(int[] arr) {
-		int num = arr[0];
+		for(int i = 0; i < arr.length; i++) {
+			int counter = 0;
+			for(int j = 0; j < arr.length; j++) {
+				
+			}
+		}
 	}
 	
 	private int totalArr(int[] arr) {
