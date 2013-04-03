@@ -13,7 +13,17 @@ public class Player {
 		}
 	
 	public int getPoints(int[] dice, int category) {
+		sort(dice);
 		
+	}
+	
+	private void sort(int[] arr) {
+		int max = arr[1];
+		for(int i = 0; i < arr.length; i++) {
+			for(int j = 0; j < arr.length; j++) {
+				
+			}
+		}
 	}
 	
 	private String name;
