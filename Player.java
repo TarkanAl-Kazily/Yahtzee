@@ -45,6 +45,7 @@ public class Player {
 				result += num;
 			}
 		}
+		return num;
 	}
 	
 	private String name;
