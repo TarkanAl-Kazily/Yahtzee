@@ -33,6 +33,7 @@ public class Player {
 		case YahtzeeConstants.SMALL_STRAIGHT: return pointsSmallStraight(dice);
 		case YahtzeeConstants.LARGE_STRAIGHT: return pointsLargeStraight(dice);
 		case YahtzeeConstants.YAHTZEE: return pointsYahtzee(dice);
+		case YahtzeeConstants.CHANCE: return pointsChance(dice);
 		}
 	}
 	
