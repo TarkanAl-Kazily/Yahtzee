@@ -37,7 +37,11 @@ public class Player {
 	 * and so on, until arr[end].
 	 */
 	private void shiftArray(int initial, int end) {
-		for(int i = end; i > (initial + 1); i--)
+		for(int i = end; i > (initial + 1); i--) {
+			
+			
+			
+		}
 	}
 	
 	private String name;
