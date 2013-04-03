@@ -7,6 +7,12 @@ public class Player {
 	}
 	
 	public static void initializeScores() {
+		int[][] dice = new int[252][1]
+		for(int i = 0; i < YahtzeeConstants.N_DICE; i++) {
+			
+		}
+		
+		
 		for(int category = 0; category < YahtzeeConstants.N_CATEGORIES; category++) {
 			for(int diceCombo = 0; diceCombo < YahtzeeConstants.N_DICE; diceCombo++) {
 				
