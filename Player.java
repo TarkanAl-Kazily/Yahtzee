@@ -6,29 +6,17 @@ public class Player {
 		this.name = name;
 	}
 	
-	public static void initializeScores() {
-		int[][] dice = new int[252][5];
-		for(int i = 0; i < 252; i++) {
-			for(int j = 0; j < 5; j++) {
-				dice[i][j] = 
-			}
-		}
-		
-		
-		for(int category = 0; category < YahtzeeConstants.N_CATEGORIES; category++) {
-			for(int diceCombo = 0; diceCombo < YahtzeeConstants.N_DICE; diceCombo++) {
-				
-			}
-		}
-	}
-	
 	public boolean scoreRoll(int[] dice, int category) {
-		if ((points[category] != 0)) {
+		if ((category == YahtzeeConstants.UPPER_BONUS) ||
+			(category == YahtzeeConstants.UPPER_SCORE) ||
+			(category == YahtzeeConstants.LOWER_SCORE) ||
+			(category == YahtzeeConstants.TOTAL)) return false;
+		else if ((points[category] != 0)) {
 			points[category] = getPoints(dice, category);
 			return true;
 		}
 		else return false;
-		}
+	}
 	
 	public int getPoints(int[] dice, int category) {
 		Arrays.sort(dice);
@@ -39,5 +27,4 @@ public class Player {
 	
 	private String name;
 	private int[] points = new int[YahtzeeConstants.N_CATEGORIES];
-	private static int[][][] scores = new int[YahtzeeConstants.N_CATEGORIES][YahtzeeConstants.N_DICE][1];
 }
