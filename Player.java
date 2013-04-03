@@ -40,7 +40,7 @@ public class Player {
 	
 	private int pointsSingle(int[] dice, int num) {
 		int result = 0;
-		for(int i = 0; i < YahtzeeConstants.N_DICE; i++) {
+		for(int i = 0; i < dice.length; i++) {
 			if (dice[i] == num) {
 				result += num;
 			}
