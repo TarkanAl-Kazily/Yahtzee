@@ -15,6 +15,7 @@ public class Player {
 		}
 	
 	public int getPoints(int[] dice, int category) {
+		Arrays.sort(dice);
 		
 		
 	}
