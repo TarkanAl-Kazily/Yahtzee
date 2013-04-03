@@ -21,7 +21,9 @@ public class Player {
 	public int getPoints(int[] dice, int category) {
 		Arrays.sort(dice);
 		switch(category) {
-		
+		case YahtzeeConstants.ONES: return pointsOnes(dice);
+		case YahtzeeConstants.TWOS: return pointsTwos(dice);
+		case YahtzeeConstants.THREES: return pointsThrees(dice);
 		}
 	}
 	
