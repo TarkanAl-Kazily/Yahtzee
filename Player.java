@@ -48,7 +48,11 @@ public class Player {
 		return num;
 	}
 	
-	private boolean pointsNumOfAKind(int[] arr, int num) {
+	private int pointsThreeOfAKind(int[] arr) {
+		if (poi)
+	}
+	
+	private boolean numOfAKind(int[] arr, int num) {
 		for(int i = 0; i < arr.length; i++) {
 			int counter = 0;
 			for(int j = 0; j < arr.length; j++) {
