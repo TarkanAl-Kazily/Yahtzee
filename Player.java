@@ -37,9 +37,7 @@ public class Player {
 		default: return 0;
 		}
 	}
-	
-	
-	
+		
 	private int pointsSingle(int[] arr, int num) {
 		int result = 0;
 		for(int i = 0; i < arr.length; i++) {
@@ -50,7 +48,11 @@ public class Player {
 		return num;
 	}
 	
-	private int totalNums(int[] arr) {
+	private int pointsThreeOfAKind(int[] arr) {
+		
+	}
+	
+	private int totalArr(int[] arr) {
 		int result = 0;
 		for(int i = 0; i < arr.length; i++) {
 			result += arr[i];
