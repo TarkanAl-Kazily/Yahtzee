@@ -24,6 +24,13 @@ public class Player {
 		case YahtzeeConstants.ONES: return pointsOnes(dice);
 		case YahtzeeConstants.TWOS: return pointsTwos(dice);
 		case YahtzeeConstants.THREES: return pointsThrees(dice);
+		case YahtzeeConstants.FOURS: return pointsFours(dice);
+		case YahtzeeConstants.FIVES: return pointsFives(dice);
+		case YahtzeeConstants.SIXES: return pointsSixes(dice);
+		case YahtzeeConstants.THREE_OF_A_KIND: return pointsThreeOfAKind(dice);
+		case YahtzeeConstants.FOUR_OF_A_KIND: return pointsFourOfAKind(dice);
+		case YahtzeeConstants.FULL_HOUSE: return pointsFullHouse(dice);
+		
 		}
 	}
 	
