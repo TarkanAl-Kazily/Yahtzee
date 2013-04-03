@@ -49,7 +49,7 @@ public class Player {
 	}
 	
 	private int pointsThreeOfAKind(int[] arr) {
-		
+		int num = arr[0];
 	}
 	
 	private int totalArr(int[] arr) {
