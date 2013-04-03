@@ -50,6 +50,13 @@ public class Player {
 		return num;
 	}
 	
+	private int totalNums(int[] arr) {
+		int result = 0;
+		for(int i = 0; i < arr.length; i++) {
+			result += arr[i];
+		}
+	}
+	
 	private String name;
 	private int[] points = new int[YahtzeeConstants.N_CATEGORIES];
 }
