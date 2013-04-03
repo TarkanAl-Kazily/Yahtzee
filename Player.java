@@ -7,7 +7,7 @@ public class Player {
 	}
 	
 	public static void initializeScores() {
-		
+		for(int i = 0; i < )
 	}
 	
 	public boolean scoreRoll(int[] dice, int category) {
@@ -27,5 +27,5 @@ public class Player {
 	
 	private String name;
 	private int[] points = new int[17];
-	private static int[][][] scores = new int[17][5][1];
+	private static int[][][] scores = new int[YahtzeeConstants.N_CATEGORIES][YatzeeConstants.N_DICE][1];
 }
