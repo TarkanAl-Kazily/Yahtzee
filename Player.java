@@ -50,6 +50,7 @@ public class Player {
 	
 	private int pointsThreeOfAKind(int[] arr) {
 		if (numOfAKind(arr, 3)) return totalArr(arr);
+		else return 0;
 	}
 	
 	private boolean numOfAKind(int[] arr, int num) {
