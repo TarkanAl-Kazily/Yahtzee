@@ -27,5 +27,5 @@ public class Player {
 	
 	private String name;
 	private int[] points = new int[17];
-	private static int[][][] scores = new int[YahtzeeConstants.N_CATEGORIES][YatzeeConstants.N_DICE][1];
+	private static int[][][] scores = new int[YahtzeeConstants.N_CATEGORIES][YahtzeeConstants.N_DICE][1];
 }
