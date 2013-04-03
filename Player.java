@@ -9,7 +9,7 @@ public class Player {
 	public static void initializeScores() {
 		for(int category = 0; category < YahtzeeConstants.N_CATEGORIES; category++) {
 			for(int diceCombo = 0; diceCombo < YahtzeeConstants.N_DICE; diceCombo++) {
-				for(int  = 0; )
+				
 			}
 		}
 	}
