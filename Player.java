@@ -7,7 +7,9 @@ public class Player {
 	}
 	
 	public static void initializeScores() {
-		for(int i = 0; i < )
+		for(int i = 0; i < YahtzeeConstants.N_CATEGORIES; i++) {
+			
+		}
 	}
 	
 	public boolean scoreRoll(int[] dice, int category) {
