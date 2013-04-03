@@ -18,7 +18,7 @@ public class Player {
 		else return false;
 	}
 	
-	public int getPoints(int[] dice, int category) {
+	private int getPoints(int[] dice, int category) {
 		Arrays.sort(dice);
 		switch(category) {
 		case YahtzeeConstants.ONES: return pointsOnes(dice);
@@ -35,6 +35,15 @@ public class Player {
 		case YahtzeeConstants.YAHTZEE: return pointsYahtzee(dice);
 		case YahtzeeConstants.CHANCE: return pointsChance(dice);
 		default: return 0;
+		}
+	}
+	
+	private int pointsSingle(int[] dice, int num) {
+		int result = 0;
+		for(int i = 0; i < YahtzeeConstants.N_DICE; i++) {
+			if (dice[i] == num) {
+				result += num;
+			}
 		}
 	}
 	
