@@ -9,7 +9,7 @@ public class Player {
 	public static void initializeScores() {
 		int[][] dice = new int[252][5];
 		for(int i = 0; i < 252; i++) {
-			for(int j = 0; j < 6; j++) {
+			for(int j = 0; j < 5; j++) {
 				dice[i][j] = 
 			}
 		}
