@@ -1,3 +1,5 @@
+
+
 public class Player {
 	
 	public Player(String name) {
@@ -13,22 +15,22 @@ public class Player {
 		}
 	
 	public int getPoints(int[] dice, int category) {
-		sort(dice);
+		
 		
 	}
 	
-	private void sort(int[] arr) {
-		for(int i = 0; i < arr.length; i++) {
-			int test = arr[i];
-			for(int j = 0; j < arr.length; j++) {
-				if (arr[j] < arr[i]) {
-					int moved = arr[j];
-					shiftArray(i, j);
-					arr[i] = moved;
-				}
-			}
-		}
-	}
+//	private void sort(int[] arr) {
+//		for(int i = 0; i < arr.length; i++) {
+//			int test = arr[i];
+//			for(int j = 0; j < arr.length; j++) {
+//				if (arr[j] < arr[i]) {
+//					int moved = arr[j];
+//					shiftArray(i, j);
+//					arr[i] = moved;
+//				}
+//			}
+//		}
+//	}
 	
 	
 	/* Precondition: Array
