@@ -48,16 +48,17 @@ public class Player {
 		return num;
 	}
 	
-	private int pointsNumOfAKind(int[] arr, int num) {
+	private boolean pointsNumOfAKind(int[] arr, int num) {
 		for(int i = 0; i < arr.length; i++) {
 			int counter = 0;
 			for(int j = 0; j < arr.length; j++) {
 				if (arr[i] == arr[j]) counter++;
 			}
 			if (counter >= num) {
-				break;
+				return true;
 			}
 		}
+		return false;
 	}
 	
 	private int totalArr(int[] arr) {
