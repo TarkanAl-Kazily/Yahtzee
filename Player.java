@@ -18,35 +18,10 @@ public class Player {
 		Arrays.sort(dice);
 		
 		
-	}
-	
-//	private void sort(int[] arr) {
-//		for(int i = 0; i < arr.length; i++) {
-//			int test = arr[i];
-//			for(int j = 0; j < arr.length; j++) {
-//				if (arr[j] < arr[i]) {
-//					int moved = arr[j];
-//					shiftArray(i, j);
-//					arr[i] = moved;
-//				}
-//			}
-//		}
-//	}
-	
-	
-	/* Precondition: Array
-	 * Postcondition: An array which has arr[end] deleted,
-	 * and arr[initial] is in the place of arr[initial + 1]
-	 * and so on, until arr[end].
-	 */
-	private void shiftArray(int initial, int end) {
-		for(int i = end; i > (initial + 1); i--) {
-			
-			
-			
-		}
+		
 	}
 	
 	private String name;
 	private int[] points = new int[17];
+	private static int[][][] scores = new int[17][5][1];
 }
