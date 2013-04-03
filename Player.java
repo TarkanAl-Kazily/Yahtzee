@@ -55,6 +55,7 @@ public class Player {
 		for(int i = 0; i < arr.length; i++) {
 			result += arr[i];
 		}
+		return result;
 	}
 	
 	private String name;
