@@ -7,7 +7,7 @@ public class Player {
 	}
 	
 	public static void initializeScores() {
-		int[][] dice = new int[252][1]
+		int[][] dice = new int[252][1];
 		for(int i = 0; i < YahtzeeConstants.N_DICE; i++) {
 			
 		}
