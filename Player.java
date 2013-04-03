@@ -49,7 +49,7 @@ public class Player {
 	}
 	
 	private int pointsThreeOfAKind(int[] arr) {
-		if (poi)
+		if (numOfAKind(arr, 3)) return totalArr(arr);
 	}
 	
 	private boolean numOfAKind(int[] arr, int num) {
