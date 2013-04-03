@@ -8,8 +8,10 @@ public class Player {
 	
 	public static void initializeScores() {
 		int[][] dice = new int[252][5];
-		for(int i = 0; i < YahtzeeConstants.N_DICE; i++) {
-			
+		for(int i = 0; i < 252; i++) {
+			for(int j = 0; j < 6; j++) {
+				dice[i][j] = 
+			}
 		}
 		
 		
