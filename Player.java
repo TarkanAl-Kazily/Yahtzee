@@ -38,10 +38,10 @@ public class Player {
 		}
 	}
 	
-	private int pointsSingle(int[] dice, int num) {
+	private int pointsSingle(int[] arr, int num) {
 		int result = 0;
-		for(int i = 0; i < dice.length; i++) {
-			if (dice[i] == num) {
+		for(int i = 0; i < arr.length; i++) {
+			if (arr[i] == num) {
 				result += num;
 			}
 		}
