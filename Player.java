@@ -4,11 +4,12 @@ public class Player {
 		this.name = name;
 	}
 	
-	public void scoreRoll(int[] dice, int category) {
+	public boolean scoreRoll(int[] dice, int category) {
 		if (points[category] != 0) {
-			
+			points[category] = getPoints(dice, category);
+			return true;
 		}
-		points[category] = getPoints(dice, category);
+		else return false;
 		}
 	
 	public int getPoints(int[] dice, int category) {
