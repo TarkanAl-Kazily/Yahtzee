@@ -53,6 +53,11 @@ public class Player {
 		else return 0;
 	}
 	
+	private int pointsFourOfAKind(int[] arr) {
+		if (numOfAKind(arr, 4)) return totalArr(arr);
+		else return 0;
+	}
+
 	private boolean numOfAKind(int[] arr, int num) {
 		for(int i = 0; i < arr.length; i++) {
 			int counter = 0;
