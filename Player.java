@@ -21,12 +21,12 @@ public class Player {
 	private int getPoints(int[] dice, int category) {
 		Arrays.sort(dice);
 		switch(category) {
-		case YahtzeeConstants.ONES: return pointsOnes(dice);
-		case YahtzeeConstants.TWOS: return pointsTwos(dice);
-		case YahtzeeConstants.THREES: return pointsThrees(dice);
-		case YahtzeeConstants.FOURS: return pointsFours(dice);
-		case YahtzeeConstants.FIVES: return pointsFives(dice);
-		case YahtzeeConstants.SIXES: return pointsSixes(dice);
+		case YahtzeeConstants.ONES: return pointsSingle(dice, 1);
+		case YahtzeeConstants.TWOS: return pointsSingle(dice, 2);
+		case YahtzeeConstants.THREES: return pointsSingle(dice, 3);
+		case YahtzeeConstants.FOURS: return pointsSingle(dice, 4);
+		case YahtzeeConstants.FIVES: return pointsSingle(dice, 5);
+		case YahtzeeConstants.SIXES: return pointsSingle(dice, 6);
 		case YahtzeeConstants.THREE_OF_A_KIND: return pointsThreeOfAKind(dice);
 		case YahtzeeConstants.FOUR_OF_A_KIND: return pointsFourOfAKind(dice);
 		case YahtzeeConstants.FULL_HOUSE: return pointsFullHouse(dice);
@@ -37,6 +37,8 @@ public class Player {
 		default: return 0;
 		}
 	}
+	
+	
 	
 	private int pointsSingle(int[] arr, int num) {
 		int result = 0;
