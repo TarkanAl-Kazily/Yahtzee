@@ -6,6 +6,10 @@ public class Player {
 		this.name = name;
 	}
 	
+	public static void initializeScores() {
+		
+	}
+	
 	public boolean scoreRoll(int[] dice, int category) {
 		if (points[category] != 0) {
 			points[category] = getPoints(dice, category);
