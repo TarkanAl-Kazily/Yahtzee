@@ -117,14 +117,11 @@ public class Player {
 	}
 	
 	private boolean fullHouse(int[] arr) {
-		int ones = 0;
-		int twos = 0;
-		int threes = 0;
-		int fours = 0;
-		int fives = 0;
-		int sixes = 0;
+		int[] nums = new int[6];
 		for(int i = 1; i < 6; i++) {
-			if ()
+			for(int num : arr) {
+				if (num)
+			}
 		}
 	}
 	
