@@ -68,6 +68,11 @@ public class Player {
 		else return 0;
 	}
 	
+	private int pointsLargeStraight(int[] arr) {
+		if (largeStraight(arr)) return 40;
+		else return 0;
+	}
+	
 	private boolean smallStraight(int[] arr) {
 		for(int i = 0; i < (arr.length - 2); i++) {
 			if ((arr[i] == (arr[i+1] + 1)) && (arr[i] == (arr[i+2] + 2))) return true;
