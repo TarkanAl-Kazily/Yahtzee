@@ -126,7 +126,7 @@ public class Player {
 				if (arr[i] == arr[j] && i != j) counter++;
 			}
 			if (counter == 3) {
-				
+				3num = arr[i];
 			}
 		}
 	}
