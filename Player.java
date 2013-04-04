@@ -22,7 +22,7 @@ public class Player {
 		points[YahtzeeConstants.UPPER_SCORE] = (points[YahtzeeConstants.ONES] + points[YahtzeeConstants.TWOS] 
                                                 + points[YahtzeeConstants.THREES] + points[YahtzeeConstants.FOURS]
                                                 + points[YahtzeeConstants.FIVES] + points[YahtzeeConstants.SIXES]);
-		if (points[YahtzeeConstants.UPPER_SCORE] >= 63) points[YahtzeeConstants.UPPER_BONUS]
+		if (points[YahtzeeConstants.UPPER_SCORE] >= 63) points[YahtzeeConstants.UPPER_BONUS] = 35;
 	}
 	
 	private int getPoints(int[] dice, int category) {
