@@ -116,7 +116,7 @@ public class Player {
 	}
 	
 	private boolean fullHouse(int[] arr) {
-		
+		for(int i =)
 	}
 	
 	private boolean numOfAKind(int[] arr, int num) {
