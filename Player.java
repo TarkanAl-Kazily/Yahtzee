@@ -58,6 +58,11 @@ public class Player {
 		else return 0;
 	}
 
+	private int pointsFullHouse(int[] arr) {
+		if (fullHouse(arr)) return 25;
+		else return 0;
+	}
+	
 	private boolean numOfAKind(int[] arr, int num) {
 		for(int i = 0; i < arr.length; i++) {
 			int counter = 0;
