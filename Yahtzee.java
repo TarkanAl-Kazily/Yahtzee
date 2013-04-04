@@ -80,7 +80,7 @@ public class Yahtzee extends GraphicsProgram implements YahtzeeConstants {
  			category = display.waitForPlayerToSelectCategory();
  		}
  		display.updateScorecard(category, turn, (players[turn - 1].getPoints(category)));
- 		display.updateScoreCard(YahtzeeConstants.TOTAL, turn, (players[turn - 1].getPoints(YahtzeeConstants.TOTAL)));
+ 		display.updateScorecard(YahtzeeConstants.TOTAL, turn, (players[turn - 1].getPoints(YahtzeeConstants.TOTAL)));
 	}
 	
 /* Private instance variables */
