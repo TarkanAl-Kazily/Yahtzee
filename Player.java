@@ -78,7 +78,7 @@ public class Player {
 		else return 0;
 	}
 	
-	private int pointsYahtzee(int[] arr) {
+	private int pointsChance(int[] arr) {
 		return totalArr(arr);
 	}
 	
