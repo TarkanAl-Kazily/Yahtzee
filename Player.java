@@ -127,6 +127,13 @@ public class Player {
 				break;
 			}
 		}
+		if (!three) return false;
+		else for(int i = 1; i < 6; i++) {
+			int counterTwo = 2;
+			for(int num : arr) {
+				if(num == i) counterTwo--;
+			}
+		}
 	}
 	
 	private boolean numOfAKind(int[] arr, int num) {
