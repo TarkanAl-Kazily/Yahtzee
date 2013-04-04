@@ -65,6 +65,7 @@ public class Yahtzee extends GraphicsProgram implements YahtzeeConstants {
  		display.waitForPlayerToClickRoll(turn);
  		int[] dice = getDice();
  		display.displayDice(dice);
+ 		display.printMessage("Select the dice you wish to re-roll and click \"Roll Again\".");
  		display.waitForPlayerToSelectDice();
  		dice = rerollDice(dice);
  		display.displayDice(dice);
