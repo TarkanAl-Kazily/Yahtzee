@@ -124,7 +124,7 @@ public class Player {
 		int fives = 0;
 		int sixes = 0;
 		for(int i = 1; i < 6; i++) {
-			
+			if ()
 		}
 	}
 	
