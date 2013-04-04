@@ -117,22 +117,16 @@ public class Player {
 	}
 	
 	private boolean fullHouse(int[] arr) {
-		int[] nums = new int[6];
-		for(int i = 1; i < 6; i++) {
-			for(int num : arr) {
-				if (num == i) {
-					nums[i-1] += 1;
-				}
+		for(int i = 0; i < arr.length; i++) {
+			int counter = 0;
+			for(int j = 0; j < arr.length; j++) {
+				if (arr[i] == arr[j] && i != j) counter++;
+			}
+			if (counter >= num) {
+				return true;
 			}
 		}
-		int counterForTwos = 0;
-		int counterForThrees = 0;
-		for(int num : nums) {
-			if (num == 2) counterForTwos++;
-			if (num == 3) counterForThrees++;
-		}
-		if ((counterForTwos == 1) && (counterForThrees == 1)) return true;
-		else return false;
+		return false;
 	}
 	
 	private boolean numOfAKind(int[] arr, int num) {
