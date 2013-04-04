@@ -137,6 +137,7 @@ public class Player {
 				return true;
 			}
 		}
+		return false;
 	}
 	
 	private boolean numOfAKind(int[] arr, int num) {
