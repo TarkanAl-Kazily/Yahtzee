@@ -140,7 +140,7 @@ public class Player {
 				break;
 			}
 		}
-		return false;
+		return threeOfAKind && twoOfAKind;
 	}
 	
 	private boolean numOfAKind(int[] arr, int num) {
