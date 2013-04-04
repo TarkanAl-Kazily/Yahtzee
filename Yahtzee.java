@@ -78,7 +78,7 @@ public class Yahtzee extends GraphicsProgram implements YahtzeeConstants {
  			display.printMessage("Invalid category. Please choose another.");
  			category = display.waitForPlayerToSelectCategory();
  		}
- 		display.updateScorecard(category, turn - 1, (players[turn - 1].getPoints(category)));
+ 		display.updateScorecard(category, turn, (players[turn - 1].getPoints(category)));
 	}
 	
 /* Private instance variables */
