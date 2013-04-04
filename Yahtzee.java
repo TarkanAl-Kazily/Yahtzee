@@ -53,6 +53,7 @@ public class Yahtzee extends GraphicsProgram implements YahtzeeConstants {
 	}
 	
 	private int[] rerollDice(int[] arr) {
+		int[] rerolled = new int[5];
 		
 	}
 	
