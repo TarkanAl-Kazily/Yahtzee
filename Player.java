@@ -63,6 +63,11 @@ public class Player {
 		else return 0;
 	}
 	
+	private int pointsSmallStraight(int[] arr) {
+		if (straight(arr)) return 30;
+		else return 0;
+	}
+	
 	private boolean fullHouse(int[] arr) {
 		boolean three = false;
 		boolean two = false;
