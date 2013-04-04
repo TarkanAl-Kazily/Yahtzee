@@ -56,7 +56,7 @@ public class Player {
 				result += num;
 			}
 		}
-		return num;
+		return result;
 	}
 	
 	private int pointsThreeOfAKind(int[] arr) {
