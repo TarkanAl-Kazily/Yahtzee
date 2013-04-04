@@ -63,6 +63,13 @@ public class Player {
 		else return 0;
 	}
 	
+	private boolean fullHouse(int[] arr) {
+		boolean three = false;
+		boolean two = false;
+		int three = arr[0];
+		
+	}
+	
 	private boolean numOfAKind(int[] arr, int num) {
 		for(int i = 0; i < arr.length; i++) {
 			int counter = 0;
