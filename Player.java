@@ -67,6 +67,16 @@ public class Player {
 		boolean three = false;
 		boolean two = false;
 		int numThree = arr[0];
+		for(int i = 0; i < arr.length; i++) {
+			int counter = 0;
+			for(int j = 0; j < arr.length; j++) {
+				if (arr[i] == arr[j] && j != i) counter++;
+			}
+			if (counter >= 3) {
+				three = true;
+				
+			}
+		}
 		
 	}
 	
