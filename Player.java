@@ -79,13 +79,14 @@ public class Player {
 			}
 		}
 		
+		
 	}
 	
 	private boolean numOfAKind(int[] arr, int num) {
 		for(int i = 0; i < arr.length; i++) {
 			int counter = 0;
 			for(int j = 0; j < arr.length; j++) {
-				if (arr[i] == arr[j]) counter++;
+				if (arr[i] == arr[j] && i != j) counter++;
 			}
 			if (counter >= num) {
 				return true;
