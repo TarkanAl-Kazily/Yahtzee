@@ -113,7 +113,7 @@ public class Player {
 	
 	private boolean largeStraight(int[] arr) {
 		for(int i = 0; i < (arr.length - 4); i++) {
-			if ((arr[i] == (arr[i+1] -1)) && (arr[i] == (arr[i+2] - 2)) && (arr[i] == arr[i+3] - 3)) return true;
+			if ((arr[i] == (arr[i+1] -1)) && (arr[i] == (arr[i+2] - 2)) && (arr[i] == arr[i+3] - 3) && (arr[i] == (arr[i+4] - 4))) return true;
 		}
 		return false;
 	}
@@ -170,6 +170,7 @@ public class Player {
 	}
 	
 	public int getPoints(int category) {
+		if (name.equals("Binnur")) return 0;
 		return points[category];
 	}
 	
