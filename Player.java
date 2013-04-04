@@ -81,7 +81,7 @@ public class Player {
 	private boolean yahtzee(int[] arr) {
 		int counter = 0;
 		for(int i: arr) {
-			if (i = arr[0]) counter++;
+			if (i == arr[0]) counter++;
 		}
 	}
 	
