@@ -84,7 +84,7 @@ public class Player {
 		for(int i = 0; i < (arr.length - 4); i++) {
 			if ((arr[i] == (arr[i+1] -1)) && (arr[i] == (arr[i+2] - 2)) && (arr[i] == arr[i+3] - 3) && (arr[i] == (arr[i+4] - 4))) return true;
 		}
-		else return false;
+		return false;
 	}
 	
 	private boolean fullHouse(int[] arr) {
