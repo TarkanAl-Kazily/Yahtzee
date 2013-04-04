@@ -116,9 +116,6 @@ public class Player {
 	}
 	
 	private boolean fullHouse(int[] arr) {
-		for(i : arr) {
-			if (i == arr[0]) count++;
-		}
 		
 	}
 	
