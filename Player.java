@@ -79,7 +79,9 @@ public class Player {
 	}
 	
 	private boolean yahtzee(int[] arr) {
-		
+		for(int i: arr) {
+			if 
+		}
 	}
 	
 	private boolean smallStraight(int [] arr) {
