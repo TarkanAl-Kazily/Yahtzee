@@ -74,7 +74,8 @@ public class Player {
 			}
 			if (counter >= 3) {
 				three = true;
-				
+				numThree = arr[i];
+				break;
 			}
 		}
 		
