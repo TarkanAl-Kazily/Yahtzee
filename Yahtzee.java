@@ -36,10 +36,18 @@ public class Yahtzee extends GraphicsProgram implements YahtzeeConstants {
 			for(int turn = 1; turn < nPlayers; turn++) {
 				display.printMessage(playerNames[turn - 1] + "'s turn.");
 		 		display.waitForPlayerToClickRoll(turn);
+		 		int[] dice = getDice();
 			}
  		}
 	}
-		
+	
+	private int[] getDice() {
+		int[] dice = new int[5];
+		for(int i = 0; i < dice.length; i++) {
+			dice[i] = rgen.nextInt(1, 6);
+		}
+	}
+	
 /* Private instance variables */
 	private int nPlayers;
 	private String[] playerNames;
