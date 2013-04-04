@@ -119,7 +119,6 @@ public class Player {
 	private boolean fullHouse(int[] arr) {
 		boolean threeOfAKind = false;
 		boolean twoOfAKind = false;
-		int threeNum = 0;
 		for(int i = 0; i < arr.length; i++) {
 			int counter = 0;
 			for(int j = 0; j < arr.length; j++) {
@@ -147,7 +146,7 @@ public class Player {
 		for(int i = 0; i < arr.length; i++) {
 			int counter = 0;
 			for(int j = 0; j < arr.length; j++) {
-				if (arr[i] == arr[j] && i != j) counter++;
+				if (arr[i] == arr[j]) counter++;
 			}
 			if (counter >= num) {
 				return true;
