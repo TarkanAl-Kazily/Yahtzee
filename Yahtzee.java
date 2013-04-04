@@ -40,6 +40,7 @@ public class Yahtzee extends GraphicsProgram implements YahtzeeConstants {
 				runTurn(turn);
 			}
  		}
+		display.printMessage("Game over");
 	}
 	
 	private int[] getDice() {
