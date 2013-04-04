@@ -37,24 +37,7 @@ public class Yahtzee extends GraphicsProgram implements YahtzeeConstants {
 	private void playGame() {
 		 for(int rounds = 0; rounds < N_SCORING_CATEGORIES; rounds++) {
 			for(int turn = 1; turn < nPlayers; turn++) {
-				display.printMessage(players[turn - 1].getName() + "'s turn! Click \"Roll Dice\" to roll the dice.");
-		 		display.waitForPlayerToClickRoll(turn);
-		 		int[] dice = getDice();
-		 		display.displayDice(dice);
-		 		display.waitForPlayerToSelectDice();
-		 		display.waitForPlayerToClickRoll(turn);
-		 		dice = rerollDice(dice);
-		 		display.displayDice(dice);
-		 		display.waitForPlayerToSelectDice();
-		 		display.waitForPlayerToClickRoll(turn);
-		 		dice = rerollDice(dice);
-		 		display.displayDice(dice);
-		 		int category = display.waitForPlayerToSelectCategory();
-		 		while(!players[turn - 1].scoreRoll(dice, category)) {
-		 			display.printMessage("Invalid category. Please choose another.");
-		 			category = display.waitForPlayerToSelectCategory();
-		 		}
-		 		display.updateScorecard(category, turn - 1, (players[turn - 1].getPoints(category)));
+				
 			}
  		}
 	}
@@ -77,7 +60,24 @@ public class Yahtzee extends GraphicsProgram implements YahtzeeConstants {
 	}
 	
 	private void runTurn(int whosTurn) {
-		
+		display.printMessage(players[turn - 1].getName() + "'s turn! Click \"Roll Dice\" to roll the dice.");
+ 		display.waitForPlayerToClickRoll(turn);
+ 		int[] dice = getDice();
+ 		display.displayDice(dice);
+ 		display.waitForPlayerToSelectDice();
+ 		display.waitForPlayerToClickRoll(turn);
+ 		dice = rerollDice(dice);
+ 		display.displayDice(dice);
+ 		display.waitForPlayerToSelectDice();
+ 		display.waitForPlayerToClickRoll(turn);
+ 		dice = rerollDice(dice);
+ 		display.displayDice(dice);
+ 		int category = display.waitForPlayerToSelectCategory();
+ 		while(!players[turn - 1].scoreRoll(dice, category)) {
+ 			display.printMessage("Invalid category. Please choose another.");
+ 			category = display.waitForPlayerToSelectCategory();
+ 		}
+ 		display.updateScorecard(category, turn - 1, (players[turn - 1].getPoints(category)));
 	}
 	
 /* Private instance variables */
