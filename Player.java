@@ -80,7 +80,7 @@ public class Player {
 	
 	private boolean yahtzee(int[] arr) {
 		for(int i: arr) {
-			if 
+			if (i = arr[0])
 		}
 	}
 	
