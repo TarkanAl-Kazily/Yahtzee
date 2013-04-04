@@ -122,7 +122,10 @@ public class Player {
 			for(int num : arr) {
 				if(num == i) counterThree--;
 			}
-			if (counterThree == 0) break;
+			if (counterThree == 0) {
+				three = true;
+				break;
+			}
 		}
 	}
 	
