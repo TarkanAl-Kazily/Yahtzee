@@ -11,7 +11,7 @@ public class Player {
 			(category == YahtzeeConstants.UPPER_SCORE) ||
 			(category == YahtzeeConstants.LOWER_SCORE) ||
 			(category == YahtzeeConstants.TOTAL)) return false;
-		else if ((points[category] != 0)) {
+		else if ((points[category] == 0)) {
 			points[category] = getPoints(dice, category);
 			return true;
 		}
