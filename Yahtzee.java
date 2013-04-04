@@ -16,6 +16,7 @@ public class Yahtzee extends GraphicsProgram implements YahtzeeConstants {
 	}
 	
 	public void run() {
+		rgen.setSeed(1);
 		IODialog dialog = getDialog();
 		nPlayers = 5;
 		while ((nPlayers > MAX_PLAYERS) || (nPlayers <= 0)) {
@@ -31,7 +32,7 @@ public class Yahtzee extends GraphicsProgram implements YahtzeeConstants {
 	}
 
 	private void playGame() {
-		 
+		 turnPlayer = 
 	}
 		
 /* Private instance variables */
