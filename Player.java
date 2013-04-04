@@ -73,6 +73,11 @@ public class Player {
 		else return 0;
 	}
 	
+	private int pointsYahtzee(int[] arr) {
+		if (yahtzee(arr)) return 50;
+		else return 0;
+	}
+	
 	private boolean smallStraight(int [] arr) {
 		for(int i = 0; i < (arr.length - 3); i++) {
 			if ((arr[i] == (arr[i+1] - 1)) && (arr[i] == (arr[i+2] - 2)) && (arr[i] == (arr[i+3] - 3))) return true;
