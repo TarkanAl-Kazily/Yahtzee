@@ -32,9 +32,12 @@ public class Yahtzee extends GraphicsProgram implements YahtzeeConstants {
 	}
 
 	private void playGame() {
-		 turnPlayer = rgen.nextInt(0, (nPlayers - 1));
-		 display.printMessage(playerNames[turnPlayer] + "'s turn.");
-		 display.waitForPlayerToClickRoll(turnPlayer + 1);
+		 for(int rounds = 0; rounds < N_SCORING_CATEGORIES; rounds++) {
+			for(int turn = 1; turn < nPlayers; turn++) {
+				display.printMessage(playerNames[turn - 1] + "'s turn.");
+		 		display.waitForPlayerToClickRoll(turn);
+		 
+ 		}
 	}
 		
 /* Private instance variables */
@@ -43,5 +46,4 @@ public class Yahtzee extends GraphicsProgram implements YahtzeeConstants {
 	private YahtzeeDisplay display;
 	private RandomGenerator rgen = new RandomGenerator();
 	private ArrayList<Player> players = new ArrayList<Player>();
-	private int turnPlayer = 0;
 }
