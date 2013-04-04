@@ -46,7 +46,7 @@ public class Yahtzee extends GraphicsProgram implements YahtzeeConstants {
 		 		display.waitForPlayerToClickRoll(turn);
 		 		dice = rerollDice(dice);
 		 		display.displayDice(dice);
-		 		category = display.waitForPlayerToSelectCategory();
+		 		int category = display.waitForPlayerToSelectCategory();
 		 		
 			}
  		}
