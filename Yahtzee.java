@@ -39,7 +39,10 @@ public class Yahtzee extends GraphicsProgram implements YahtzeeConstants {
 				runTurn(turn);
 			}
  		}
-		for(Player p : players) p.calculateEndCategories();
+		for(int p = 0; p < nPlayers; p++) {
+			players[p].calculateEndCategories();
+			display.updateScorecard(YahtzeeConstants.UPPER_SCORE, , score)
+		}
 		int maxPoints = 0;
 		String winner = "";
 		for(Player p : players) {
