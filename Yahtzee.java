@@ -52,9 +52,13 @@ public class Yahtzee extends GraphicsProgram implements YahtzeeConstants {
 		return dice;
 	}
 	
-	private int[] rerollDice(int[] arr) {
+	private int[] rerollDice(int[] dice) {
 		int[] rerolled = new int[5];
-		
+		for(int i = 0; i < dice.length; i++) {
+			if (display.isDieSelected(i)) {
+				rerolled[i] = rgen.nextInt(1, 6);
+			}
+		}
 	}
 	
 /* Private instance variables */
