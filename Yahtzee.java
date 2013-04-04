@@ -73,6 +73,7 @@ public class Yahtzee extends GraphicsProgram implements YahtzeeConstants {
  		display.waitForPlayerToSelectDice();
  		dice = rerollDice(dice);
  		display.displayDice(dice);
+ 		display.printMessage("Select a category for this roll.");
  		int category = display.waitForPlayerToSelectCategory();
  		while(!players[turn - 1].scoreRoll(dice, category)) {
  			display.printMessage("Invalid category. Please choose another.");
