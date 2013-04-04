@@ -173,5 +173,5 @@ public class Player {
 	}
 	
 	private String name;
-	private int[] points = new int[YahtzeeConstants.N_CATEGORIES];
+	private int[] points = new int[(YahtzeeConstants.N_CATEGORIES + 1)];
 }
