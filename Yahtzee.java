@@ -43,6 +43,7 @@ public class Yahtzee extends GraphicsProgram implements YahtzeeConstants {
 			players[p].calculateEndCategories();
 			display.updateScorecard(YahtzeeConstants.UPPER_SCORE, p + 1, players[p].getPoints(YahtzeeConstants.UPPER_SCORE));
 			display.updateScorecard(YahtzeeConstants.UPPER_BONUS, p + 1, players[p].getPoints(YahtzeeConstants.UPPER_BONUS));
+			display.updateScorecard(YahtzeeConstants.LOWER_SCORE, P + 1, players[p].getPoints(YahtzeeConstants.LOWER_SCORE));
 		}
 		int maxPoints = 0;
 		String winner = "";
