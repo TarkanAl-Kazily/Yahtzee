@@ -28,7 +28,7 @@ public class Yahtzee extends GraphicsProgram implements YahtzeeConstants {
 		}
 		String[] playerNames = new String[nPlayers];
 		for(int i = 0; i < nPlayers; i++) {
-			
+			playerNames[i] = players[i].getName();
 		}
 		display = new YahtzeeDisplay(getGCanvas(), playerNames);
 		playGame();
