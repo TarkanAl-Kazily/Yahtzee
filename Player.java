@@ -127,7 +127,8 @@ public class Player {
 			}
 			if (counter == 3) {
 				threeNum = arr[i];
-				
+				threeOfAKind = true;
+				break;
 			}
 		}
 	}
