@@ -120,7 +120,9 @@ public class Player {
 		int[] nums = new int[6];
 		for(int i = 1; i < 6; i++) {
 			for(int num : arr) {
-				if (num)
+				if (num == i) {
+					nums[i-1] += 1;
+				}
 			}
 		}
 	}
