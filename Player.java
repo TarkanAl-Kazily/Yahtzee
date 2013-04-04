@@ -78,6 +78,10 @@ public class Player {
 		else return 0;
 	}
 	
+	private int pointsYahtzee(int[] arr) {
+		return totalArr(arr);
+	}
+	
 	private boolean yahtzee(int[] arr) {
 		int counter = 0;
 		for(int i: arr) {
