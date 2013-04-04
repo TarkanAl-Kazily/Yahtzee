@@ -32,7 +32,7 @@ public class Yahtzee extends GraphicsProgram implements YahtzeeConstants {
 	}
 
 	private void playGame() {
-		 turnPlayer = 
+		 turnPlayer = rgen.nextInt(0, nPlayers);
 	}
 		
 /* Private instance variables */
