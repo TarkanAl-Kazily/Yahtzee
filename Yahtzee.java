@@ -39,9 +39,7 @@ public class Yahtzee extends GraphicsProgram implements YahtzeeConstants {
 				runTurn(turn);
 			}
  		}
-		for(Player p : players) {
-			p.calculateEndCategories();
-		}
+		for(Player p : players) p.calculateEndCategories();
 		int maxPoints = 0;
 		String winner;
 		for(Player p : players) {
