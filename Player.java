@@ -83,6 +83,7 @@ public class Player {
 		for(int i: arr) {
 			if (i == arr[0]) counter++;
 		}
+		return (counter == arr.length);
 	}
 	
 	private boolean smallStraight(int [] arr) {
