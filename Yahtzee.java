@@ -39,7 +39,7 @@ public class Yahtzee extends GraphicsProgram implements YahtzeeConstants {
 		 		int[] dice = getDice();
 		 		display.displayDice(dice);
 		 		display.waitForPlayerToSelectDice();
-		 		rerollDice(dice);
+		 		dice = rerollDice(dice);
 			}
  		}
 	}
@@ -50,6 +50,10 @@ public class Yahtzee extends GraphicsProgram implements YahtzeeConstants {
 			dice[i] = rgen.nextInt(1, 6);
 		}
 		return dice;
+	}
+	
+	private int[] rerollDice(int[] arr) {
+		
 	}
 	
 /* Private instance variables */
