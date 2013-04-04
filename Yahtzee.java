@@ -58,6 +58,7 @@ public class Yahtzee extends GraphicsProgram implements YahtzeeConstants {
 			if (display.isDieSelected(i)) rerolled[i] = rgen.nextInt(1, 6);
 			else rerolled[i] = dice[i];
 		}
+		return rerolled;
 	}
 	
 /* Private instance variables */
