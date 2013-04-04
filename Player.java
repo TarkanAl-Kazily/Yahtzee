@@ -77,6 +77,7 @@ public class Player {
 		for(int i = 0; i < (arr.length - 3); i++) {
 			if ((arr[i] == (arr[i+1] - 1)) && (arr[i] == (arr[i+2] - 2)) && (arr[i] == (arr[i+3] - 3))) return true;
 		}
+		return false;
 	}
 	
 	private boolean smallStraight(int[] arr) {
