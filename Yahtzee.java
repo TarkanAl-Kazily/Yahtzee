@@ -22,10 +22,9 @@ public class Yahtzee extends GraphicsProgram implements YahtzeeConstants {
 		while ((nPlayers > MAX_PLAYERS) || (nPlayers <= 0)) {
 			nPlayers = dialog.readInt("Enter number of players");
 		}
-		playerNames = new String[nPlayers];
+		players = new Player[nPlayers];
 		for (int i = 1; i <= nPlayers; i++) {
 			playerNames[i - 1] = dialog.readLine("Enter name for player " + i);
-			players.add(new Player(playerNames[i-1]));
 		}
 		display = new YahtzeeDisplay(getGCanvas(), playerNames);
 		playGame();
