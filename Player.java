@@ -78,8 +78,13 @@ public class Player {
 				break;
 			}
 		}
-		
-		
+		for(int i = 0; i < arr.length; i++) {
+			int counter = 0;
+			for(int j = 0; j < arr.length; j++) {
+				if (arr[i] == arr[j] && i != j) counter++;
+				if (counter >= 2 && arr[i] != numThree) {
+					;
+				}
 	}
 	
 	private boolean numOfAKind(int[] arr, int num) {
