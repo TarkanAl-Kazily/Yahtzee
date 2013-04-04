@@ -170,7 +170,6 @@ public class Player {
 	}
 	
 	public int getPoints(int category) {
-		if (name.equals("Binnur")) return 0;
 		return points[category];
 	}
 	
