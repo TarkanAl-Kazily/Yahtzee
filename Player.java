@@ -13,6 +13,7 @@ public class Player {
 			(category == YahtzeeConstants.TOTAL)) return false;
 		else if ((points[category] == 0)) {
 			points[category] = getPoints(dice, category);
+			points[YahtzeeConstants.TOTAL] = 0;
 			points[YahtzeeConstants.TOTAL] = totalArr(points);
 			return true;
 		}
