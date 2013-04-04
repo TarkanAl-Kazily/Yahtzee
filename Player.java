@@ -73,18 +73,17 @@ public class Player {
 		else return 0;
 	}
 	
-	private boolean largeStraight(int [] arr) {
+	private boolean smallStraight(int [] arr) {
 		for(int i = 0; i < (arr.length - 3); i++) {
 			if ((arr[i] == (arr[i+1] - 1)) && (arr[i] == (arr[i+2] - 2)) && (arr[i] == (arr[i+3] - 3))) return true;
 		}
 		return false;
 	}
 	
-	private boolean smallStraight(int[] arr) {
-		for(int i = 0; i < (arr.length - 2); i++) {
-			if ((arr[i] == (arr[i+1] - 1)) && (arr[i] == (arr[i+2] - 2))) return true;
+	private boolean largeStraight(int[] arr) {
+		for(int i = 0; i < (arr.length - 4); i++) {
+			if ((arr[i] == (arr[i+1] -1)) && (arr[i] == (arr[i+2] - 2)) && (arr[i] == arr[i+3] - 3) && (arr[i] == (arr[i+4] - 4))) return true;
 		}
-		return false;
 	}
 	
 	private boolean fullHouse(int[] arr) {
