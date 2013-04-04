@@ -121,7 +121,7 @@ public class Player {
 			int Three;
 			for(int num : arr) {
 				if(num == i) counterThree--;
-				
+				Three == num;
 			}
 		}
 	}
