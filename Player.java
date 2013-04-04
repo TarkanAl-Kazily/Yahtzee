@@ -133,6 +133,9 @@ public class Player {
 			for(int num : arr) {
 				if(num == i) counterTwo--;
 			}
+			if (counterTwo == 0) {
+				return true;
+			}
 		}
 	}
 	
