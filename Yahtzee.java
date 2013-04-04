@@ -50,7 +50,10 @@ public class Yahtzee extends GraphicsProgram implements YahtzeeConstants {
 		 		dice = rerollDice(dice);
 		 		display.displayDice(dice);
 		 		int category = display.waitForPlayerToSelectCategory();
-		 		
+		 		while(!players[turn - 1].scoreRoll(dice, category)) {
+		 			display.printMessage("Invalid category. Please choose another.");
+		 			category = display.waitForPlayerToSelectCategory();
+		 		}
 			}
  		}
 	}
@@ -70,6 +73,10 @@ public class Yahtzee extends GraphicsProgram implements YahtzeeConstants {
 			else rerolled[i] = dice[i];
 		}
 		return rerolled;
+	}
+	
+	private void runTurn(int whosTurn) {
+		
 	}
 	
 /* Private instance variables */
