@@ -163,6 +163,10 @@ public class Player {
 		}
 		return result;
 	}
+
+	public String getName() {
+		return name;
+	}
 	
 	private String name;
 	private int[] points = new int[YahtzeeConstants.N_CATEGORIES];
