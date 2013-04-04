@@ -116,9 +116,9 @@ public class Player {
 	}
 	
 	private boolean fullHouse(int[] arr) {
+		boolean three = false
 		for(int i = 1; i < 6; i++) {
 			int counterThree = 3;
-			int Three;
 			for(int num : arr) {
 				if(num == i) counterThree--;
 			}
