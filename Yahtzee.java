@@ -59,7 +59,7 @@ public class Yahtzee extends GraphicsProgram implements YahtzeeConstants {
 		return rerolled;
 	}
 	
-	private void runTurn(int whosTurn) {
+	private void runTurn(int turn) {
 		display.printMessage(players[turn - 1].getName() + "'s turn! Click \"Roll Dice\" to roll the dice.");
  		display.waitForPlayerToClickRoll(turn);
  		int[] dice = getDice();
