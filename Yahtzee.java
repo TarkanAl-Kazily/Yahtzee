@@ -18,7 +18,7 @@ public class Yahtzee extends GraphicsProgram implements YahtzeeConstants {
 	public void run() {
 		IODialog dialog = getDialog();
 		nPlayers = 5;
-		while ((nPlayers > MAX_PLAYERS) && (nPlayers <= 0)) {
+		while ((nPlayers > MAX_PLAYERS) || (nPlayers <= 0)) {
 			nPlayers = dialog.readInt("Enter number of players");
 		}
 		playerNames = new String[nPlayers];
