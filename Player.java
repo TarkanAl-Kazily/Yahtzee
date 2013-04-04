@@ -66,7 +66,7 @@ public class Player {
 	private boolean fullHouse(int[] arr) {
 		boolean three = false;
 		boolean two = false;
-		int three = arr[0];
+		int numThree = arr[0];
 		
 	}
 	
