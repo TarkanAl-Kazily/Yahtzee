@@ -125,7 +125,7 @@ public class Player {
 			for(int j = 0; j < arr.length; j++) {
 				if (arr[i] == arr[j] && i != j) counter++;
 			}
-			if (counter == 3) {
+			if (counter == 2) {
 				threeOfAKind = true;
 				break;
 			}
@@ -135,7 +135,7 @@ public class Player {
 			for(int j = 0; j < arr.length; j++) {
 				if (arr[i] == arr[j] && i != j) counter++;
 			}
-			if (counter == 2) {
+			if (counter == 1) {
 				twoOfAKind = true;
 				break;
 			}
