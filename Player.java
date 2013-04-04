@@ -88,6 +88,7 @@ public class Player {
 				}
 			}
 		}
+		return three && two;
 	}
 	
 	private boolean numOfAKind(int[] arr, int num) {
