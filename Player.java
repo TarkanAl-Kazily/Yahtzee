@@ -19,7 +19,9 @@ public class Player {
 	}
 	
 	public void calculateSumCategories() {
-		points[YahtzeeConstants.UPPER_SCORE] = (points[YahtzeeConstants.ONES] + points[YahtzeeConstants.TWOS] + points[YahtzeeConstants.THREES] + points[YahtzeeConstants.FOURS] + points[YahtzeeConstants.FIVES] + points[YahtzeeConstants.SIXES]);
+		points[YahtzeeConstants.UPPER_SCORE] = (points[YahtzeeConstants.ONES] + points[YahtzeeConstants.TWOS] 
+                                                + points[YahtzeeConstants.THREES] + points[YahtzeeConstants.FOURS]
+                                                + points[YahtzeeConstants.FIVES] + points[YahtzeeConstants.SIXES]);
 	}
 	
 	private int getPoints(int[] dice, int category) {
