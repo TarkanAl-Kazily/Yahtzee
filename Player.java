@@ -26,6 +26,7 @@ public class Player {
 		points[YahtzeeConstants.LOWER_SCORE] = (points[YahtzeeConstants.THREE_OF_A_KIND] + points[YahtzeeConstants.FOUR_OF_A_KIND]
                                                 + points[YahtzeeConstants.FULL_HOUSE] + points[YahtzeeConstants.SMALL_STRAIGHT]
                                                 + points[YahtzeeConstants.LARGE_STRAIGHT] + points[YahtzeeConstants.YAHTZEE] + points[YahtzeeConstants.CHANCE]);
+		points[YahtzeeConstants.TOTAL] = totalArr(points);
 	}
 	
 	private int getPoints(int[] dice, int category) {
