@@ -39,7 +39,7 @@ public class Yahtzee extends GraphicsProgram implements YahtzeeConstants {
 				runTurn(turn);
 			}
  		}
-		display.printMessage("Game over");
+		int Ma
 	}
 	
 	private int[] getDice() {
