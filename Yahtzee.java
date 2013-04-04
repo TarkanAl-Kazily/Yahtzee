@@ -48,7 +48,7 @@ public class Yahtzee extends GraphicsProgram implements YahtzeeConstants {
 				winner = p.getName();
 			}
 		}
-		display.printMessage(")
+		display.printMessage("Congratulations, " + winner + ", you're the winner with a total score of " + maxPoints + "points!");
 	}
 	
 	private int[] getDice() {
