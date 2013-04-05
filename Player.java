@@ -107,8 +107,8 @@ public class Player {
 	private boolean smallStraight(int [] arr) {
 		for(int i = 0; i < arr.length; i++) {
 			if ((arr[arr.length % i] == arr[arr.length % (i + 1)] - 1) &&
-			    (arr[arr.length % i] == arr[arr.length % (i + 1)] - 1) && 
-				(arr[arr.length % i] == arr[arr.length % (i + 1)] - 1)) return true;
+			    (arr[arr.length % i] == arr[arr.length % (i + 2)] - 2) && 
+				(arr[arr.length % i] == arr[arr.length % (i + 3)] - 3)) return true;
 		}
 		return false;
 	}
