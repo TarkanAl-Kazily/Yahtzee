@@ -62,7 +62,7 @@ public class Yahtzee extends GraphicsProgram implements YahtzeeConstants {
 		for(int i = 0; i < dice.length; i++) {
 			dice[i] = rgen.nextInt(1, 6);
 		}
-		return dice;
+		return {1, 2, 2, 3, 4};
 	}
 	
 	private int[] rerollDice(int[] dice) {
