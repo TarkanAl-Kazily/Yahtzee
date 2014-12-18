@@ -7,7 +7,6 @@
 import acm.io.*;
 import acm.program.*;
 import acm.util.*;
-import java.util.*;
 
 public class Yahtzee extends GraphicsProgram implements YahtzeeConstants {
 	
